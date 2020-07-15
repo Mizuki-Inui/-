@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setScreenLine();
     }
-    private void setScreenLine(){
+    private void setScreenLine(){//一覧画面への遷移
         setContentView(R.layout.activity_main);
         inputButton = (Button) findViewById(R.id.input);
         inputButton.setOnClickListener(new View.OnClickListener(){
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    private void setScreenInput(){
+    private void setScreenInput(){//入力画面への遷移
         setContentView(R.layout.input_screen);
         lineButton = (Button) findViewById(R.id.line2);
         lineButton.setOnClickListener(new View.OnClickListener(){
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    private void setScreenPuzzle(){
+    private void setScreenPuzzle(){//パズル画面への遷移
         setContentView(R.layout.puzzle_screen);
         lineButton = (Button) findViewById(R.id.line4);
         lineButton.setOnClickListener(new View.OnClickListener(){
